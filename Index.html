@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Básico</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        h1 { color: blue; }
-    </style>
+    <title>Meu Site Personalizado</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Bem-vindo ao Meu Site!</h1>
-    <p>Este é um site básico criado pelo celular.</p>
+    <p>Este site foi criado no GitHub Pages e agora está estilizado!</p>
+    
+    <button onclick="mostrarMensagem()">Clique Aqui</button>
+    
+    <p id="mensagem"></p>
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").innerText = "Você clicou no botão!";
+        }
+    </script>
 </body>
 </html>
